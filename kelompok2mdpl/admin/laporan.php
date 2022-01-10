@@ -1,5 +1,5 @@
 <?php
-include('koneksi.php');
+include('../koneksi.php');
 ?>
 <table border="0"  width="1000px">
     <tr>

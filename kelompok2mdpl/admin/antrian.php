@@ -1,4 +1,4 @@
-<?php include('koneksi.php'); ?>
+<?php include('../koneksi.php'); ?>
 
 		<center><font size="6">Input Antrian</font></center>
 		<hr>
