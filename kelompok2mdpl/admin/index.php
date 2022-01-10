@@ -8,20 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
 
-    <title> halaman home </title>
+    <title> Laundry</title>
 
     <!-- Bootstrap -->
-    <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="assets/nprogress/nprogress.css" rel="stylesheet">
+    <link href="../assets/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
-    <link href="assets/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="../assets/iCheck/skins/flat/green.css" rel="stylesheet">
     <!-- bootstrap-progressbar -->
-    <link href="assets/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- Custom Theme Style -->
-    <link href="assets/css/custom.min.css" rel="stylesheet">
+    <link href="../assets/css/custom.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -31,7 +31,7 @@
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
             <center>
-            &nbsp; <a href="index.php" style="color:#fff;"><span><font size="4.95" color="white" face="Helvetica Neue">APLIKASI LAUNDRY</font></span></a>
+            &nbsp; <a href="index.php" style="color:#fff;"><span><font size="4.95" color="white" face="Helvetica Neue">LAUNDRY CLEAN ME</font></span></a>
             </center>
             </div>
 
@@ -40,7 +40,7 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="assets/images/user.png" alt="..." class="img-circle profile_img">
+                <img src="../assets/images/user.png" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
@@ -55,7 +55,7 @@
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <ul class="nav side-menu">
-                  <li><a href="index.php"><i class="fa fa-tachometer"></i> Dashboard <span class="fa fa-chevron"></span></a>
+                  <li><a href="index.php?page=tampil_dashboard"><i class="fa fa-tachometer"></i> Dashboard <span class="fa fa-chevron"></span></a>
                   </li>
                   <li><a href="index.php?page=tampil_paket"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Data Paket <span class="fa fa-chevron"></span></a>
                   </li>
@@ -99,7 +99,7 @@
               <ul class=" navbar-right">
                 <li class="nav-item dropdown open" >
                   <a href="#" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/images/user.png" alt="">Admin
+                    <img src="../assets/images/user.png" alt="">Admin
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item"  href="#"> Profile</a>
@@ -160,6 +160,10 @@
           # code...
           include 'laporan.php';
           break;
+          case 'tampil_pembayaran':
+            # code...
+            include 'tampilpembayaran.php';
+            break;
         case 'tampil_konfirmasi':
           # code...
           include 'transaksi_bayar.php';
@@ -201,21 +205,21 @@
     </div>
 
     <!-- jQuery -->
-    <script src="assets/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- FastClick -->
-    <script src="assets/fastclick/lib/fastclick.js"></script>
+    <script src="../assets/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="assets/nprogress/nprogress.js"></script>
+    <script src="../assets/nprogress/nprogress.js"></script>
     <!-- bootstrap-progressbar -->
-    <script src="assets/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="../assets/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
-    <script src="assets/iCheck/icheck.min.js"></script>
+    <script src="../assets/iCheck/icheck.min.js"></script>
     <!-- Skycons -->
-    <script src="assets/skycons/skycons.js"></script>
+    <script src="../assets/skycons/skycons.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="assets/js/custom.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
 
   </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 //memasukkan file config.php
-include('koneksi.php');
+include('../koneksi.php');
 ?>
 
 

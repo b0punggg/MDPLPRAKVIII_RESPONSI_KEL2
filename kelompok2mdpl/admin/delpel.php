@@ -1,6 +1,6 @@
 <?php
 //include file config.php
-include('koneksi.php');
+include('../koneksi.php');
 
 //jika benar mendapatkan GET id dari URL
 if(isset($_GET['id_pelanggan'])){

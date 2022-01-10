@@ -1,4 +1,4 @@
-<?php include('koneksi.php'); ?>
+<?php include('../koneksi.php'); ?>
 
         <center><font size="6">Input Paket</font></center>
         <hr>

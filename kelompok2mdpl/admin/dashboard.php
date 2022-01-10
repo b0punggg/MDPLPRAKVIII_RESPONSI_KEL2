@@ -1,5 +1,5 @@
 <?php
-include('koneksi.php');
+include('../koneksi.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,10 +11,11 @@ include('koneksi.php');
   
   <table border="0"  width="1000px">
     <tr>
-      <td width="50" height="150">
-        <table width="70%" border="0" align="center">
+
+    <td width="50" height="150">
+        <table width="90%" border="0" align="center">
           <tr align="center">
-            <td height="120px" style="background-color: orangered;">
+            <td height="120px" style="background-color: #DD49B3;">
                 <i class="fa fa-user fa-5x"></i>
                 <?php
                   $sqlcount = 'SELECT COUNT(*)AS COUNT FROM data';
@@ -22,16 +23,35 @@ include('koneksi.php');
                   $result = mysqli_fetch_array($commit);
                   echo $result[0];
                 ?>
-                <p class="announcement-text">DATA PELANGGAN</p>
+                <p class="text-light font-weight-bold">DATA PAKET</p>
+                <a href="index.php?page=tampil_paket">More Info<i class="fa fa-arrow-circle-right"></i></a>
+            </td> 
+          </tr>
+        </table>
+      </td>
+
+      <td width="50" height="150">
+        <table width="60%" border="0" align="center">
+          <tr align="center">
+            <td height="120px" style="background-color: #78DD49;">
+                <i class="fa fa-user fa-5x"></i>
+                <?php
+                  $sqlcount = 'SELECT COUNT(*)AS COUNT FROM data';
+                  $commit =  mysqli_query($koneksi,$sqlcount);
+                  $result = mysqli_fetch_array($commit);
+                  echo $result[0];
+                ?>
+                <p class="text-light font-weight-bold">DATA PELANGGAN</p>
                 <a href="index.php?page=tampil_antri">More Info<i class="fa fa-arrow-circle-right"></i></a>
             </td> 
           </tr>
         </table>
       </td>
+
       <td width="50" height="150">
-        <table width="70%" border="0" align="center">
+        <table width="60%" border="0" align="center">
           <tr align="center">
-            <td height="120px" style="background-color: skyblue;">
+            <td height="120px" style="background-color: #FF3E3E;">
                 <i class="fa fa-exchange fa-5x"></i>
                 <?php
                   $sqlcount = 'SELECT COUNT(*)AS COUNT FROM transaksi2';
@@ -39,16 +59,21 @@ include('koneksi.php');
                   $result = mysqli_fetch_array($commit);
                   echo $result[0];
                 ?>
-                <p class="announcement-text">TRANSAKSI</p>
+                <p class="text-light font-weight-bold">TRANSAKSI</p>
                 <a href="index.php?page=tampil_transaksi">More Info<i class="fa fa-arrow-circle-right"></i></a>
             </td> 
           </tr>
         </table>
       </td>
-      <td width="50" height="150">
-        <table width="70%" border="0" align="center">
+    </tr>
+  </table>
+
+  <table border="0"  width="1000px">
+    <tr>
+    <td width="50" height="150">
+        <table style="margin-left: 10px;" width="22%" border="0" align="center">
           <tr align="center">
-            <td height="120px" style="background-color: yellow;">
+            <td height="120px" style="background-color: #FFD646;">
                 <i class="fa fa-book fa-5x"></i>
                 <?php
                   $sqlcount = 'SELECT COUNT(*)AS COUNT FROM transaksi';
@@ -56,14 +81,13 @@ include('koneksi.php');
                   $result = mysqli_fetch_array($commit);
                   echo $result[0];
                 ?>
-                <p class="announcement-text">LAPORAN</p>
+                <p class="text-light font-weight-bold">LAPORAN</p>
                 <a href="index.php?page=tampil_laporan">More Info<i class="fa fa-arrow-circle-right"></i></a>
             </td> 
           </tr>
         </table>
       </td>
     </tr>
-    
   </table>
 
 </body>

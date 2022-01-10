@@ -1,4 +1,4 @@
-<?php include('koneksi.php'); ?>
+<?php include('../koneksi.php'); ?>
 
 
 	<div class="container" style="margin-top:20px">
