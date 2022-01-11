@@ -16,7 +16,7 @@ include('../koneksi.php');
         <table width="90%" border="0" align="center">
           <tr align="center">
             <td height="120px" style="background-color: #DD49B3;">
-                <i class="fa fa-user fa-5x"></i>
+                <i class="fa fa-shopping-cart fa-5x"></i>
                 <?php
                   $sqlcount = 'SELECT COUNT(*)AS COUNT FROM data';
                   $commit =  mysqli_query($koneksi,$sqlcount);
